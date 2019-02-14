@@ -48,3 +48,48 @@
     </div>
 </body>
 </html>
+/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="#" method="post" onsubmit="return validation();">
+<input type="text" name="name" id="name">
+<input type="email" name="email" id="email">
+<input type="password" name="password" id="password">
+<input type="submit" name="submit" value="insert now">
+</form>
+<div id="eresult" style="color:red;"></div>
+<script type="text/javascript">
+function validation(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    if(name=='' || password =='' || email=='') 
+    {
+        document.getElementById("eresult").innerHTML = "all fields required";
+        return false;
+    }
+    else if(name.length<2){
+        document.getElementById("eresult").innerHTML = "name must be atleast 2 characters";
+        return false;
+    }
+
+    else if(password.length<4){
+        document.getElementById("eresult").innerHTML = "password must be atleast 4 characters";
+        return false;
+    }
+
+    else {
+        return true;
+    }
+}
+</script>
+</body>
+</html>
+*/
