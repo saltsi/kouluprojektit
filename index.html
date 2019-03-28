@@ -74,19 +74,19 @@
                     var email = document.getElementById('email').value;
                     if(id=='' || psw =='' || nimi=='' || email=='') 
                     {
-                        document.getElementById("eresult").innerHTML = "all fields required";
+                        document.getElementById("eresult").innerHTML = "kaikki kentät pitää täyttää";
                         return false;
                     }
                     else if(id.length<2){
-                        document.getElementById("eresult").innerHTML = "id must be atleast 2 characters";
+                        document.getElementById("eresult").innerHTML = "id:n pitää olla vähintään 4 merkkiä";
                         return false;
                     }
                     else if(psw.length<4){
-                        document.getElementById("eresult").innerHTML = "password must be atleast 4 characters";
+                        document.getElementById("eresult").innerHTML = "salsanan on oltava vähintään 4 merkkiä";
                         return false;
                     }
                     else if(nimi.lengts<2){
-                        document.getElementById("eresult").innerHTML = "name must be atleast 2 characters";
+                        document.getElementById("eresult").innerHTML = "nimen on oltava vähintään 4 merkkiä";
                         return false;
                     }
                     
